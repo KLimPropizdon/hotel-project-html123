@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гостиница "Ейск" - Отдых на Азовском море</title>
+</head>
+<body>
+    <header>
+        <h1>Гостиница "Ейск"</h1>
+        <p>Лучший отдых на Азовском море</p>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#rooms">Номера</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#media">Медиа</a></li>
+                <li><a href="#location">Расположение</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>О нашей гостинице</h2>
+            <p>Гостиница "Ейск" расположена в самом сердце города, всего в 200 метрах от пляжа Азовского моря. Мы предлагаем комфортабельные номера по доступным ценам.</p>
+            <img src="https://via.placeholder.com/800x400?text=Фото+гостиницы" alt="Фото гостиницы в Ейске">
+        </section>
+
+        <section id="rooms">
+            <h2>Наши номера</h2>
+            <article>
+                <h3>Стандартный номер</h3>
+                <img src="https://via.placeholder.com/400x300?text=Стандарт" alt="Стандартный номер">
+                <p>Уютный номер с одной или двумя кроватями, собственной ванной комнатой и всем необходимым для комфортного проживания.</p>
+                <p>Цена: от 2500 руб./ночь</p>
+            </article>
+            
+            <article>
+                <h3>Номер люкс</h3>
+                <img src="https://via.placeholder.com/400x300?text=Люкс" alt="Номер люкс">
+                <p>Просторный номер с гостиной зоной, большой кроватью и панорамным видом на море.</p>
+                <p>Цена: от 4500 руб./ночь</p>
+            </article>
+            
+            <article>
+                <h3>Семейный номер</h3>
+                <img src="https://via.placeholder.com/400x300?text=Семейный" alt="Семейный номер">
+                <p>Специально designed для семейного отдыха с детьми. Включает основную и дополнительную комнаты.</p>
+                <p>Цена: от 5500 руб./ночь</p>
+            </article>
+        </section>
+
+        <section id="services">
+            <h2>Услуги</h2>
+            <ul>
+                <li>Бесплатный Wi-Fi на всей территории</li>
+                <li>Парковка для гостей</li>
+                <li>Ресторан с местной кухней</li>
+                <li>Экскурсионное бюро</li>
+                <li>Прокат велосипедов и спортивного инвентаря</li>
+                <li>SPA-услуги</li>
+            </ul>
+        </section>
+
+        <section id="media">
+            <h2>Медиа</h2>
+            
+            <article>
+                <h3>Аудио-приветствие</h3>
+                <p>Послушайте приветственное сообщение от директора гостиницы:</p>
+                <audio controls>
+                    <source src="FRIENDLY_THUG_52_NGG_-_No_Gletcher_Gang_2_79157887.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент.
+                </audio>
+            </article>
+            
+            <article>
+                <h3>Видео-тур по гостинице</h3>
+                <p>Посмотрите видео-тур по территории и номерам нашей гостиницы:</p>
+                <video controls width="800" poster="https://via.placeholder.com/800x450?text=Видео+гостиницы">
+                    <source src="istockphoto-2171255700-640_adpp_is.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео элемент.
+                </video>
+            </article>
+        </section>
+
+        <section id="location">
+            <h2>Расположение</h2>
+            <p>Наша гостиница находится по адресу: г. Ейск, ул. Коммунистическая, д. 45</p>
+            
+            <h3>Геолокация</h3>
+            <p>Широта: 46.7104° с.ш.</p>
+            <p>Долгота: 38.2777° в.д.</p>
+            
+            <button onclick="getLocation()">Определить мое местоположение</button>
+            <p id="demo"></p>
+            
+            <h3>Карта</h3>
+            <img src="https://via.placeholder.com/800x400?text=Карта+расположения+гостиницы" alt="Карта расположения гостиницы в Ейске">
+        </section>
+
+        <section id="contacts">
+            <h2>Контакты</h2>
+            <p>Телефон: +7 (777) 777-77-77</p>
+            <p>Email: info@yeysk-hotel.ru</p>
+            <p>Режим работы: Круглосуточно</p>
+            
+            <h3>Форма бронирования</h3>
+            <form>
+                <div>
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="checkin">Дата заезда:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+                
+                <div>
+                    <label for="checkout">Дата выезда:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+                
+                <div>
+                    <label for="room">Тип номера:</label>
+                    <select id="room" name="room">
+                        <option value="standard">Стандартный</option>
+                        <option value="lux">Люкс</option>
+                        <option value="family">Семейный</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="message">Дополнительная информация:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                
+                <button type="submit">Отправить запрос</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Гостиница "Ейск". Все права защищены.</p>
+        <p>г. Ейск, ул. Коммунистическая, д. 45</p>
+        <p>Телефон: +7 (777) 777-77-77 | Email: info@yeysk-hotel.ru</p>
+    </footer>
+
+    <script>
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                document.getElementById("demo").innerHTML = "Геолокация не поддерживается вашим браузером.";
+            }
+        }
+        
+        function showPosition(position) {
+            document.getElementById("demo").innerHTML = "Ваши координаты: Широта: " + position.coords.latitude + 
+            ", Долгота: " + position.coords.longitude;
+        }
+        
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    document.getElementById("demo").innerHTML = "Вы отказались от предоставления геолокации.";
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    document.getElementById("demo").innerHTML = "Информация о местоположении недоступна.";
+                    break;
+                case error.TIMEOUT:
+                    document.getElementById("demo").innerHTML = "Время запроса геолокации истекло.";
+                    break;
+                case error.UNKNOWN_ERROR:
+                    document.getElementById("demo").innerHTML = "Произошла неизвестная ошибка.";
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
